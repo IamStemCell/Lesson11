@@ -1,3 +1,28 @@
+#Task 1 Files Write a script that creates a new output file called
+#myfile.txt and writes the string "Hello file world!" in it. 
+#Then write another script that opens myfile.txt, 
+#and reads and prints its contents.
+#Run your two scripts from the system command line. 
+#Does the new file show up in the directory where you ran your scripts? 
+#ТАК! 
+#What if you add a different directory path to the filename passed to open?
+#filepath = 
+
+import sys
+import json 
+
+def 
+with open (filename, w) as file_object:
+json.dump( 
+
+Note: file write methods do not add newline characters to your strings; add an explicit ‘\n’ at the end of the string if you want to fully terminate the line in the file.
+
+
+
+
+
+
+
 #Наразі маю завершену лише першу фічу програми extend PhoneBook application Task2,
 що додає нові записи.
 #Ось код. Скажу чесно, все дається дуже нелегко і повільно, але ми не здаємось. Пару ночей з ітераціями по гніздових словниках і думаю, допишу всю. 
