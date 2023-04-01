@@ -6,26 +6,32 @@
 #Does the new file show up in the directory where you ran your scripts? 
 #ТАК! 
 #What if you add a different directory path to the filename passed to open?
-#filepath = 
+# поясніть,будь ласка як добавляти directory path до імені файлу в with open
 
-import sys
-import json 
-
-def 
-with open (filename, w) as file_object:
-json.dump( 
-
-Note: file write methods do not add newline characters to your strings; add an explicit ‘\n’ at the end of the string if you want to fully terminate the line in the file.
+#Note: file write methods do not add newline characters to your strings; add an explicit ‘\n’ at the end of the string if you want to fully terminate the line in the file.
 
 
+Write.py
 
+with open('my_file.txt','w') as file_object:
+    file_object.write('"\Hello file world!"\','\n')
+#скрипт створює новий файл my_file.txt
+Read.py
 
+with open('my_file.txt') as file_object:
+    rd = file_object_read()
+    print(rd)
+#скрипт відкриває, читає і виводить в принт створений з допомогою попереднього скрипта файл
+#my_file.txt
+#Для запуску обох скрипта в консолі пишу filepath з директорією, в якій знаходяться скрипти
 
+#Task2 Extend PhoneBook application 
 
+#Наразі маю завершену лише перший пункт функціоналу програми,
+що додає нові записи.Add New Entry
 
-#Наразі маю завершену лише першу фічу програми extend PhoneBook application Task2,
-що додає нові записи.
-#Ось код. Скажу чесно, все дається дуже нелегко і повільно, але ми не здаємось. Пару ночей з ітераціями по гніздових словниках і думаю, допишу всю. 
+#Ось код. Скажу чесно, все дається дуже нелегко і повільно, але ми не здаємось.
+ Пару ночей з ітераціями по гніздових словниках і думаю, допишу всю на понеділок.  
 
 #Feature 1 Add New Entry to our data Base
 contactbook = dict() #empty dictionary using function dict that is a nested dictionary in main database dictf or fresh entry
