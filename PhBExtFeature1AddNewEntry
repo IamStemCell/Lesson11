@@ -14,16 +14,16 @@
 Write.py
 
 with open('my_file.txt','w') as file_object:
-    file_object.write('"\Hello file world!"\','\n')
+    file_object.write('\"Hello file world!\"\n')
 #скрипт створює новий файл my_file.txt
 Read.py
 
 with open('my_file.txt') as file_object:
-    rd = file_object_read()
+    rd = file_object.read()
     print(rd)
 #скрипт відкриває, читає і виводить в принт створений з допомогою попереднього скрипта файл
 #my_file.txt
-#Для запуску обох скрипта в консолі пишу filepath з директорією, в якій знаходяться скрипти
+#Для запуску скрипта в консолі термінал пишу filepath з директорією, в якій знаходяться скрипти
 
 #Task2 Extend PhoneBook application 
 
