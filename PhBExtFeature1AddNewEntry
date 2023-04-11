@@ -33,6 +33,49 @@ with open('my_file.txt') as file_object:
 #Ось код. Скажу чесно, все дається дуже нелегко і повільно, але ми не здаємось.
  Пару ночей з ітераціями по гніздових словниках і думаю, допишу всю на понеділок.  
 
+
+
+#sourcecontacts.py
+import json
+
+contacts= {
+    "8767657768": {
+        "first_name": "Elvis",
+        "last_name": "Presley",
+        "city": "Odessa",
+        "state": "NY"
+    },
+    "1112223333": {
+        "first_name": "Ada",
+        "last_name": "Lovelace",
+        "city": "Frankivsk",
+        "state": "CA"
+    },
+    "5555655565": {
+        "first_name": "Satoshi",
+        "last_name": "Nakamoto",
+        "city": "Kyoto",
+        "state": "Shikino"
+    },
+    "1812283386": {
+        "first_name": "Megan",
+        "last_name": "Fox",
+        "city": "Frankivsk",
+        "state": "Iowa"
+    },
+    "6664869066": {
+        "first_name": "Corey",
+        "last_name": "Taylor",
+        "city": "Lviv",
+        "state": "NY"
+    }
+}
+
+with open ("contacts.json","w") as file_object: 
+  json.dump(contacts, file_object, indent =4) 
+
+#експорт файлу словника форматi json в папку проекта
+
 #Feature 1 Add New Entry to our data Base
 contactbook = dict() #empty dictionary using function dict that is a nested dictionary in main database dictf or fresh entry
 newentryuserinput = input('Please provide new entry to our database by typing in the phone number: ')
