@@ -27,13 +27,8 @@ with open('my_file.txt') as file_object:
 
 #Task2 Extend PhoneBook application 
 
-#Наразі маю завершену лише перший пункт функціоналу програми,
-що додає нові записи.Add New Entry
 
-#Ось код. Скажу чесно, все дається дуже нелегко і повільно, але ми не здаємось.
- Пару ночей з ітераціями по гніздових словниках і думаю, допишу всю на понеділок.  
-
-
+# Draft! Файл тел книжки окремому zip архіві в LMS 
 
 #sourcecontacts.py
 import json
@@ -76,6 +71,7 @@ with open ("contacts.json","w") as file_object:
 
 #експорт файлу словника форматi json в папку проекта
 
+#чернетка, файл в архіві zip в ЛМС 
 #Feature 1 Add New Entry to our data Base
 contactbook = dict() #empty dictionary using function dict that is a nested dictionary in main database dictf or fresh entry
 newentryuserinput = input('Please provide new entry to our database by typing in the phone number: ')
@@ -122,7 +118,5 @@ stateinput = input('Please provide State: ')
 def state_v_input(stateinput):
    contactbook[newentryuserinput]['State'] = stateinput
    return contactbook[newentryuserinput]
-
 print(state_v_input(stateinput))
-
 print(contactbook) #NEW ENTRY WITH NEW PHONENUMBER FROM OUR USER
