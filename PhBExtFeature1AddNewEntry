@@ -6,10 +6,7 @@
 #Does the new file show up in the directory where you ran your scripts? 
 #ТАК! 
 #What if you add a different directory path to the filename passed to open?
-# поясніть,будь ласка як добавляти directory path до імені файлу в with open
-
 #Note: file write methods do not add newline characters to your strings; add an explicit ‘\n’ at the end of the string if you want to fully terminate the line in the file.
-
 
 Write.py
 
@@ -27,8 +24,7 @@ with open('my_file.txt') as file_object:
 
 #Task2 Extend PhoneBook application 
 
-
-# Draft! Файл тел книжки окремому zip архіві в LMS 
+# Draft! Файл тел книжки в окремому zip архіві в LMS 
 
 #sourcecontacts.py
 import json
